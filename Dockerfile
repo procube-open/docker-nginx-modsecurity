@@ -2,7 +2,7 @@
 # ModSecurity Builder Image
 # 目的: Nginx互換のModSecurityモジュールとCRSをコンパイル/準備して保持しておく
 # ==============================================================================
-ARG NGINX_VERSION=1.29.2
+ARG NGINX_VERSION="1.29.2"
 FROM nginx:${NGINX_VERSION}
 
 # 1. ビルドツールと依存ライブラリのインストール
