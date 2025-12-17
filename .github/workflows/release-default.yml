@@ -32,3 +32,12 @@ jobs:
           context: .
           push: true
           tags: procube/nginx-modsec-builder:${{ env.TAG_VALUE }}
+
+      - name: Update Docker Hub Description
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: procube/nginx-modsec-builder
+          readme-filepath: ./README.md
+          short-description: "Pre-compiled builder image for Nginx with ModSecurity v3 and OWASP CRS."
