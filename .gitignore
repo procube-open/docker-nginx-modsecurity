@@ -1,0 +1,39 @@
+# --- OS & System Files ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Docker ---
+.env
+.env.*
+docker-compose.override.yml
+docker-build.log
+
+# --- Nginx / SSL (Security) ---
+# 秘密鍵が含まれないようにブロック
+*.key
+*.csr
+*.crt
+*.pem
+# 開発用ダミー鍵など、あえて含めたい場合のみ ! で打ち消す
+# !dev-certs/dummy.crt
+
+# --- Logs ---
+*.log
+/log/
+/logs/
+
+# --- Temporary / Build Artifacts ---
+/objs/
+/autom4te.cache/
+config.status
+config.log
+Makefile
