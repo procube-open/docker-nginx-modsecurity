@@ -56,3 +56,7 @@ This Docker image is built upon several open-source projects. We are grateful to
 * **OWASP ModSecurity Core Rule Set (CRS)**: [Apache License 2.0](https://github.com/coreruleset/coreruleset/blob/main/LICENSE)
 
 This project contains software developed by the ModSecurity project and the OWASP Core Rule Set project.
+
+## Development
+For developers interested in contributing or understanding the CI/CD setup,
+see [docs/ci-cd.md](docs/ci-cd.md) in the repository.
